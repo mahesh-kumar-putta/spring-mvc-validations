@@ -26,8 +26,15 @@
           class="error"></span>
 
     <br><br>
-
+    
+    Course Code : <input type="text" th:field="*{course}"/>
+    
+     <span th:if="${#fields.hasErrors('*{course}')}"
+          th:errors="*{course}"
+          class="error"></span>
+<br><br>
     <input type="submit" value="Submit" />
+    
 
 </form>
 
